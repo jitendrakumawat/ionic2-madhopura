@@ -1,0 +1,28 @@
+<ion-menu id="appMenu" [content]="content">
+  <ion-header>
+    <ion-toolbar class="sideMenuHeader">
+      <ion-title>Madhopura</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content >
+    <ion-list>
+      <ion-item menuClose class="icon-item-left"   (click)="goToDashboard()"> <ion-icon padding-right ios="ios-home" md="md-home"></ion-icon>
+        Home
+      </ion-item>
+      <ion-item menuClose class="icon-item-left"   (click)="myProfile()"> <ion-icon padding-right ios="ios-contact" md="md-contact"></ion-icon>
+        My Profile
+      </ion-item>
+      <ion-item menuClose class="icon-item-left"  (click)="passwordReset()"><ion-icon padding-right ios="ios-lock" md="md-lock"></ion-icon>
+        Reset Password
+      </ion-item>
+      <ion-item menuClose class="icon-item-left"  (click)="logout()">  <ion-icon padding-right ios="ios-log-out" md="md-log-out"></ion-icon>
+        Logout
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

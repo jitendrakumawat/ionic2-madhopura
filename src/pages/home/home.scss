@@ -1,0 +1,16 @@
+page-home {
+
+  .scroll-content {
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+ .errormsg {
+   color: red;
+ }
+
+}

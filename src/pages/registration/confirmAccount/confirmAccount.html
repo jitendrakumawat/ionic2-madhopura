@@ -1,0 +1,39 @@
+<ion-content padding  scroll-content="true" >
+  <ion-card class="cardClass" *ngIf="showOTPCard">
+
+     <ion-card-content>
+       <ion-list no-line>
+         <form  >
+            <ion-item>
+              <ion-input type="text" placeholder="Enter OTP here"></ion-input>
+
+            </ion-item>
+
+             <!-- <control-messages [control]="form.controls.password"></control-messages> -->
+          </form>
+       </ion-list>
+       <button ion-button block color="positive" (click)="sendOTP()" >Confirm</button>
+     </ion-card-content>
+  </ion-card>
+  <ion-card class="cardClass" *ngIf="!showOTPCard">
+
+     <ion-card-content>
+       <ion-list no-line>
+         <form  >
+            <ion-item>
+              <ion-input type="text" placeholder="Set password"></ion-input>
+
+            </ion-item>
+            <ion-item>
+              <ion-input type="text" placeholder="confirm password"></ion-input>
+
+            </ion-item>
+             <!-- <control-messages [control]="form.controls.password"></control-messages> -->
+          </form>
+       </ion-list>
+       <button ion-button block color="positive" (click)="setPassword()" >submit password</button>
+     </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

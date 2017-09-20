@@ -1,0 +1,21 @@
+<ion-content padding  scroll-content="true" >
+  <ion-card class="cardClass">
+
+     <ion-card-content>
+       <ion-list no-line>
+         <form  >
+            <ion-item>
+              <ion-input type="text" placeholder="Mobile number"></ion-input>
+
+            </ion-item>
+
+             <!-- <control-messages [control]="form.controls.password"></control-messages> -->
+          </form>
+       </ion-list>
+       <button ion-button block color="positive" (click)="sendOTP()" >Send OTP</button>
+     </ion-card-content>
+  </ion-card>
+  <p>
+    An OTP will be sent to this number. please make sure entered correct number.
+  </p>
+</ion-content>

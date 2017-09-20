@@ -1,0 +1,46 @@
+.spacers {
+  height: 20px;
+}
+.image{
+  height: auto;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  background-color:rgba(255, 255, 255, 0.4);
+}
+.dashboard{
+  width: 49%;
+  margin: 10px;
+  height: auto;
+}
+.inner-dashboard{
+  width: 92%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  height: auto;
+}
+
+.inner-dashboard h4{
+  color: #fff;
+  padding-bottom: 8px;
+}
+.darkRed {
+  background-color: #b24321;
+}
+.darkGray {
+  background-color: #70463a;
+}
+.saffron {
+  background-color: #f7910c;
+}
+.lightGreen {
+  background-color:#9ac431;
+}
+.darksky {
+  background-color: #18ad8a;
+}
+.moderatepurple {
+  background-color: #949b04;
+}

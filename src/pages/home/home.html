@@ -1,0 +1,25 @@
+<ion-content padding class="backgroundImage" scroll-content="true" >
+  <ion-card>
+     <ion-card-header>
+         Login
+     </ion-card-header>
+     <ion-card-content>
+       <ion-list no-line>
+         <form  >
+            <ion-item>
+              <ion-input type="text" placeholder="username"></ion-input>
+
+            </ion-item>
+            <!-- <control-messages [control]="form.controls.email"></control-messages> -->
+            <ion-item>
+              <ion-input type="password" placeholder="password"></ion-input>
+            </ion-item>
+             <!-- <control-messages [control]="form.controls.password"></control-messages> -->
+          </form>
+       </ion-list>
+       <p (click)="forgetPassword()">Forget password</p>
+       <button ion-button block color="positive" (click)="login()" >Login</button>
+     </ion-card-content>
+  </ion-card>
+  <button ion-button clear full color="light" (click)="createAccount()">Don't have account?,New Regstration </button>
+</ion-content>
